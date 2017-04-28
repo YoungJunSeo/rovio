@@ -183,10 +183,6 @@ int main(int argc, char** argv){
       sensor_msgs::ImageConstPtr imgMsg = it->instantiate<sensor_msgs::Image>();
       if (imgMsg != NULL) rovioNode.imgCallback0(imgMsg);
     }
-    if(it->getTopic() == cam1_topic_name){
-      sensor_msgs::ImageConstPtr imgMsg = it->instantiate<sensor_msgs::Image>();
-      if (imgMsg != NULL) rovioNode.imgCallback1(imgMsg);
-    }
     ros::spinOnce();
 
     if(rovioNode.gotFirstMessages_){
