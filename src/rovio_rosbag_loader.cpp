@@ -169,7 +169,6 @@ int main(int argc, char** argv){
 
   topics.push_back(std::string(imu_topic_name));
   topics.push_back(std::string(cam0_topic_name));
-  topics.push_back(std::string(cam1_topic_name));
   rosbag::View view(bagIn, rosbag::TopicQuery(topics));
 
 
