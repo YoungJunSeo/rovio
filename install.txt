@@ -1,0 +1,79 @@
+sudo su
+
+add-apt-repository ppa:ethz-asl/common
+
+sudo apt-get update
+
+#Eigen
+
+hg clone https://bitbucket.org/eigen/eigen/
+
+#kindr
+
+git clone https://github.com/ethz-asl/kindr.git
+
+cd ~/catkin_ws/src
+git clone git@github.com:ethz-asl/kindr.git
+catkin_make_isolated -C ~/catkin_ws
+
+
+Installation
+Build the Library with CMake
+mkdir build
+cd build
+cmake ..
+make
+The library can additionally be installed by
+sudo make install
+This will copy the file FindKindr.cmake to the module path of CMake.
+
+
+#light_weight   >> catkin_ws/src
+
+git clone https://bitbucket.org/bloesch/lightweight_filtering.git
+
+#cv-brig
+
+sudo apt-get install ros-indigo-cv-*
+
+#tf-
+
+sudo apt-get install ros-indigo-tf-*
+
+#message
+sudo apt-get install ros-indigo-message-*
+
+sudo apt-get install ros-indigo-geometry-*
+
+# add
+sudo apt-get install freeglut3-dev, sudo apt-get install libglew-dev
+
+#rovio
+
+git clone https://github.com/ethz-asl/rovio.git
+
+Install with opengl scene
+Additional dependencies: opengl, glut, glew (sudo apt-get install freeglut3-dev, sudo apt-get install libglew-dev)
+#!command
+catkin build rovio --cmake-args -DCMAKE_BUILD_TYPE=Release -DMAKE_SCENE=ON
+catkin_make
+
+source devel/setup.bash
+
+
+
+Installing on Ubuntu with apt-get
+First you must have the ROS repositories which contain the .deb for catkin_tools:
+$ sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu `lsb_release -sc` main" > /etc/apt/sources.list.d/ros-latest.list'
+$ wget http://packages.ros.org/ros.key -O - | sudo apt-key add -
+Once you have added that repository, run these commands to install catkin_tools:
+$ sudo apt-get update
+$ sudo apt-get install python-catkin-tools
+
+
+
+git clone https://github.com/bosch-ros-pkg/usb_cam.git
+
+
+sudo apt-get install v4l-utils
+
