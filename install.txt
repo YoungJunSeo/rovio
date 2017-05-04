@@ -77,3 +77,9 @@ git clone https://github.com/bosch-ros-pkg/usb_cam.git
 
 sudo apt-get install v4l-utils
 
+
+
+
+
+Camera calibration problems?
+https://github.com/ethz-asl/rovio/issues/62
