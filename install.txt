@@ -83,3 +83,6 @@ sudo apt-get install v4l-utils
 
 Camera calibration problems?
 https://github.com/ethz-asl/rovio/issues/62
+
+live rovio diverging from the start 
+https://github.com/ethz-asl/rovio/issues/70
