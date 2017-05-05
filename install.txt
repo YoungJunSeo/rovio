@@ -82,7 +82,7 @@ git clone https://github.com/bosch-ros-pkg/usb_cam.git
 
 sudo apt-get install v4l-utils
 
-
+sudo apt-get install ros-indigo-usb-cam
 
 
 
