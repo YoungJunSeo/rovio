@@ -1,3 +1,6 @@
+
+wget https://raw.githubusercontent.com/oroca/oroca-ros-pkg/master/ros_install.sh && chmod 755 ./ros_install.sh && ./ros_install.sh catkin_ws indigo
+
 sudo su
 
 add-apt-repository ppa:ethz-asl/common
