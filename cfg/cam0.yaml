@@ -5,12 +5,12 @@ camera_name: cam0
 camera_matrix:
   rows: 3
   cols: 3
-  data: [458.654, 0.0, 367.215, 0.0, 457.296, 248.375, 0.0, 0.0, 1.0]
+  data: [600.253280, 0.0, 310.227167, 0.0, 599.054125, 222.915660, 0.0, 0.0, 1.0]
 distortion_model: plumb_bob
 distortion_coefficients:
   rows: 1
   cols: 5
-  data:  [-0.28340811, 0.07395907, 0.00019359, 1.76187114e-05, 0.0]
+  data:  [-0.536896, 0.303840, 0.004053, 0.006499, 0.0]
 
 ###### Original Calibration File ######
 ## General sensor definitions.
