@@ -48,6 +48,11 @@ This will copy the file FindKindr.cmake to the module path of CMake.
 
 git clone https://bitbucket.org/bloesch/lightweight_filtering.git
 
+To do
+
+catkin_make
+
+
 #cv-brig
 
 sudo apt-get install ros-indigo-cv-*
